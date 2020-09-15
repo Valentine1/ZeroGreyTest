@@ -1,0 +1,51 @@
+.btn-sm {
+  padding: 0.35rem 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.btn-sm:hover {
+  color: #fff;
+}
+
+.card {
+  border-radius: 0rem;
+}
+
+.card-body {
+  padding: 1rem 0.25rem 0.5rem 0.25rem;
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.short-description {
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #222;
+}
+
+.price {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+.discount {
+  font-size: 0.7rem;
+  padding: 1px 1px 0px 4px;
+  margin-left: 4px;
+}
+
+.product-item {
+  border: 1px solid transparent;
+}
+
+.product-item-selected {
+  border: 1px solid gray;
+}

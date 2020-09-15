@@ -1,0 +1,23 @@
+<template id="tmplProd">
+  <div class="card-width card-container" style="position:relative;">
+    <div class="card text-center " style="position:relative; border-color: transparent; margin: 0px 10px;">
+      <img src="" class="card-img-top" alt="">
+      <div class="card-body border-top" style="position:relative; border-color: gray;">
+        <h5 class="card-title product-name">{{name}}</h5>
+        <h6 class="card-subtitle short-description">{{description}}</h6>
+        <h6 class="card-subtitle my-1 price ">
+          <span class="full-price ">{{currency}} {{full-price}}</span>
+          <span class="text-danger discount-price">{{currency}} {{discount-price}}</span>
+          <span class="bg-danger text-white discount">{{discount}}%</span>
+        </h6>
+        <div class="pt-1 buy" style="display:none;">
+          <a href="#" class="btn btn-warning btn-sm btn-block">
+            <i class="fa fa-shopping-cart" title="Add to cart"></i>
+            ADD TO CART
+          </a>
+        </div>
+        <div class="pt-2 d-flex items-slider">
+        </div>
+      </div>
+    </div>
+</template>

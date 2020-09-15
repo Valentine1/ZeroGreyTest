@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>La Sportiva Experience</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../css/app.css" >
+      <link rel="stylesheet" href="../css/product.css" >
+      <link rel="stylesheet" href="../css/pagination.css" >      
+  </head>
+  <body class="container-fluid px-0">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 head-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand pt-3" href="#"><img src="../img/brand.png" alt=""></a>
+        <form class="collapse navbar-collapse align-self-stretch" id="navBar">
+          <ul class="navbar-nav mr-auto " >
+            <li class="d-none d-lg-inline-block">
+              <div class="vertical-divider"></div>
+            </li>
+            <li class="nav-item"  >
+              <a class="nav-link d-flex align-items-end px-4 py-2  pb-lg-1 h-100" href="#">
+                Shop
+               </a>
+            </li>
+            <li class="d-none d-lg-inline-block">
+              <div class="vertical-divider"></div>
+            </li>
+            <li class="nav-item"  >
+              <a class="nav-link d-flex align-items-end px-4 pt-2 pb-3  pb-lg-1 h-100" href="#">
+                La Sportiva Experience
+               </a>
+            </li>
+            <li class="d-none d-lg-inline-block">
+              <div class="vertical-divider"></div>
+            </li>
+          </ul>
+          <form class="form-inline align-self-end" >
+            <div class="input-group input-group-sm  align-self-end ml-3 mb-2 w-25" >
+              <input id="inputSearch" type="text" class="form-control border-0" placeholder="Search" aria-label="Search" aria-describedby="butSearch"/>
+              <div class="input-group-append">
+                <button id="butSearch" type="button" class="btn btn-outline-secondary border-0"><i  class="fa fa-search" > </i></button>
+              </div>
+            </div>
+          </form>  
+      </nav>
+      <div class="head-img-container">
+        <img id="imgHeader" src="../img/header.jpg" class="img-fluid" alt="" > 
+        <button type="button" class="btn btn-warning">DISCOVER NOW</button>
+      </div>
+    </header>
+    <main class="container-fluid p-0" >
+          <nav id="breadcrumb" aria-label="breadcrumb" >
+            <ol class="breadcrumb pl-0 pt-1 pb-0" >
+              <li class="breadcrumb-item">Home</li>
+              <li class="breadcrumb-item" >Footwear Woman</li>
+            </ol>
+          </nav>
+          <div class="d-flex justify-content-between pb-2" >
+            <p  class="h5" >Mountain Boots & Shoes for Women</p>
+            <div class="dropdown">
+              <button class="btn btn-secondary  sort-drop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>ORDER BY</span> 
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </button>
+              <div id="sortMenu" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item" id = "default" >Default sorting</div>
+                <div class="dropdown-item" id = "byName" >Sort by name</div>
+                <div class="dropdown-item" id = "byPrice" >Sort by price</div>
+              </div>
+            </div>
+          </div>
+          <div class="w-50">
+            <hr  class=" heading-divider w-25 mx-0 mb-1">
+          </div>
+          <div id="products" class="d-flex flex-wrap" >
+          </div>
+          <div id="pagination" class="d-flex justify-content-center pagination-container"  >
+          </div>
+    </main>
+    <footer class="mt-5 pb-4 "  >
+        <section  class="container pt-2  foot-info">
+          <div class="row mt-4 mb-3 " >
+            <div class="col-6 col-md-4 col-lg-2 px-0 "  >
+              <div class = "row justify-content-center">
+                <div class = "col-6 col-md-8 col-lg-12 ">
+                <p class="menu-head">WHO WE ARE </p>
+                <hr  class=" heading-divider w-25 mx-0 mb-1">
+                <ul class="pl-0"  >
+                  <li>
+                    <a href="#">THE COMPANY</a>
+                  </li>
+                  <li>
+                    <a href="#">HISTORYTELLING</a>
+                  </li>
+                  <li>
+                    <a href="#">COMPANY POLICY</a>
+                  </li>
+                  <li>
+                    <a href="#">LA SPORTIVA STORES</a>
+                  </li>
+                  <li>
+                    <a href="#">WORK WITH US</a>
+                  </li>
+                  <li>
+                    <a href="#">COMPANY SATISFACTION</a>
+                  </li>
+                  <li>
+                    <a href="#">TECHNOLOGIES</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 px-0">
+              <div class = "row justify-content-center">
+                <div class = "col-6 col-md-8 col-lg-12 ">
+                  <p class="menu-head">MAGAZINE </p>
+                  <hr  class=" heading-divider w-25 mx-0 mb-1">
+                  <ul class="pl-0" >
+                    <li>
+                      <a href="#">NEWS</a>
+                    </li>
+                    <li>
+                      <a href="#">EVENTS</a>
+                    </li>
+                    <li>
+                      <a href="#">ATHLETES NEWS</a>
+                    </li>
+                    <li>
+                      <a href="#">VIDEOS</a>
+                    </li>
+                    <li>
+                      <a href="#">AMBASSADORS</a>
+                    </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 px-0">
+              <div class="row justify-content-center">
+                <div class="col-6 col-md-8 col-lg-12 ">
+                  <p class="menu-head">ONLINE STORE </p>
+                  <hr  class=" heading-divider w-25 mx-0 mb-1">
+                  <ul class="pl-0"  >
+                    <li>
+                      <a href="#">HELP</a>
+                    </li>
+                    <li>
+                      <a href="#">SHOP INFO</a>
+                    </li>
+                    <li>
+                      <a href="#">SHIPPING</a>
+                    </li>
+                    <li>
+                      <a href="#">PAYMENTS</a>
+                    </li>
+                    <li>
+                      <a href="#">RETURN POLICY</a>
+                    </li>
+                    <li>
+                      <a href="#">CUSTOMER SERVICE</a>
+                    </li>
+                    <li>
+                      <a href="#">TRACK ORDERS</a>
+                    </li>
+                    <li>
+                      <a href="#">SIZE CHART FOOTWEAR</a>
+                    </li>
+                    <li>
+                      <a href="#">SIZE CHART APPAREL</a>
+                    </li>
+                    <li>
+                      <a href="#">PRIVACY POLICY</a>
+                    </li>
+                    <li>
+                      <a href="#">COOKIES POLICY</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 px-0">
+              <div class = "row justify-content-center">
+                <div class = "col-6 col-md-8 col-lg-12 ">
+                  <p class="menu-head">COMPANY</p>
+                  <hr  class=" heading-divider w-25 mx-0 mb-1">
+                  <ul class="pl-0"  >
+                    <li>
+                      <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="#">SUGGESTED DEALERS</a>
+                    </li>
+                    <li>
+                      <a href="#">AUTHORUZED RESOLER</a>
+                    </li>
+                    <li>
+                      <a href="#">COUNTERFEIT</a>
+                    </li>
+                    <li>
+                      <a href="#">GENERAL SALES</a>
+                    </li>
+                    <li>
+                      <a href="#">CONDITIONS</a>
+                    </li>
+                    <li>
+                      <a href="#">UGC T&C</a>
+                    </li>
+                    <li>
+                      <a href="#">CONTACT US</a>
+                    </li>
+                    <li>
+                      <a href="#">PRIVACY POLICY</a>
+                    </li>
+                    <li>
+                      <a href="#">COOKIES POLICY</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 px-0">
+              <div class = "row justify-content-center">
+                <div class = "col-6 col-md-8 col-lg-12 ">
+                  <p class="menu-head">CATEGORIES </p>
+                  <hr  class=" heading-divider w-25 mx-0 mb-1">
+                  <ul class="pl-0"  >
+                    <li>
+                      <a href="#">CLIMBING</a>
+                    </li>
+                    <li>
+                      <a href="#">MOUNTAINEERING</a>
+                    </li>
+                    <li>
+                      <a href="#">APPROACH</a>
+                    </li>
+                    <li>
+                      <a href="#">HIKING</a>
+                    </li>
+                    <li>
+                      <a href="#">MOUNTAIN RUNNING</a>
+                    </li>
+                    <li>
+                      <a href="#">COMPANY SATISFACTION</a>
+                    </li>
+                    <li>
+                      <a href="#">SOCKS</a>
+                    </li>
+                    <li>
+                      <a href="#">SHOES ACCESSORIES</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 px-0">
+              <div class = "row justify-content-center">
+                <div class = "col-6 col-md-8 col-lg-12 ">
+                  <img class="mt-lg-n3" src="../img/logo_footer.png" alt="" >
+                  <p class="address pt-3"> LA SPORTIVA SPA<br> VIA ISCHIA, 2<br> 38030 ZIANO DI FIEMME<br>TRENTO<br>ITALY<br> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 mb-3 social justify-content-end" >
+            <div class="col-6 col-md-4 col-lg-2 px-0">
+              <div class = "row justify-content-center">
+                <div class = "col-6 col-md-8 col-lg-12 ">
+                  <a href="#">SITEMAP</a>
+                  <p class="follow pt-4 mb-2">FOLLOW US </p>
+                  <div> 
+                    <a class="social" href="https://www.facebook.com/pages/La-Sportiva/145161830635" target="_blank"> 
+                      <span class="fa-stack fa-lg"> 
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-facebook fa-stack-1x"></i> 
+                      </span> 
+                    </a> 
+                    <a class="social" href="http://instagram.com/lasportivagram" target="_blank">
+                      <span class="fa-stack fa-lg"> 
+                        <i class="fa fa-circle fa-stack-1x"></i> 
+                        <i class="fa fa-instagram fa-stack-2x fa-inverse"></i> 
+                        </span> </a> 
+                    <a class="social" href="https://twitter.com/lasportivatwitt" target="_blank"> 
+                      <span class="fa-stack fa-lg"> 
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i> 
+                        <i class="fa fa-twitter fa-stack-1x"></i> 
+                      </span> 
+                    </a>
+                    <a class="social" href="http://www.youtube.com/user/LaSportivatube" target="_blank">
+                      <span class="fa-stack fa-lg"> 
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-youtube fa-stack-1x"></i> 
+                        </span> 
+                      </a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </footer>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="../js/service/httpModule.js"></script>
+      <script src="../js/model/models.js"></script>
+      <script src="../js/model/paginationModel.js"></script>
+      <script src="../js/model/productsModel.js"></script>
+      <script src="../js/model/sortedProductsMapModel.js"></script>
+      <script src="../js/view/paginationView.js"></script>
+      <script src="../js/view/productView.js"></script>
+      <script src="../js/viewmodel/productVM.js"></script>
+      <script  src="../js/app.js" ></script>
+  </body>
+</html>
